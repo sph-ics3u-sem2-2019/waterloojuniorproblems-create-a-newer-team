@@ -2,6 +2,24 @@ import java.util.Scanner;
 public class Telemarketer {
 
 	public static void main(String[] args) {
+	Scanner in =new Scanner(System.in);
+	System.out.println("Enter the first digit of the last four of the phone number: ");
+	int x=in.nextInt();
+	System.out.println("Enter the second digit of the last four of the phone number: ");
+	int y =in.nextInt();
+	System.out.println("Enter the third digit of the last four of the phone number: "  );
+	int z=in.nextInt();
+	System.out.println("Enter the fourth digit of the last four of the phone number: ");
+	int q=in.nextInt();
+	System.out.println("Number: "  +x + y+ z + q );
+	if (x==8||x==9 && q == 8 || q==9 &&  y==z)  { 
+	System.out.println("Ignore"); 
+	} else System.out.println("Answer"); {
+
+}
+	// use while loop { 
+	// int answer=iegiohwiog
+	// y> 0 
 		// TODO Auto-generated method stub
 		/*
 		 * Follow the instructions in JuniorProblem.pdf
@@ -20,6 +38,9 @@ public class Telemarketer {
 		 * 12) 1,3,3,9
 		 * 13) 1,0,2,6
 		 */
+
 	}
 
+
 }
+
