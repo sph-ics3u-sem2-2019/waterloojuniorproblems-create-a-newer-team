@@ -4,15 +4,21 @@ public class ShiftySum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in=new Scanner(System.in);
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
+		System.out.println(Integer.MAX_VALUE+Integer.MIN_VALUE);
 		System.out.println("Enter starting number: ");
-		int N=in.nextInt();
+		double N=in.nextInt();
 		System.out.println("Enter number of shifts: ");
-		int k=in.nextInt();
-		double j = k*10;
+		double k=in.nextInt();
+		int answer=0;
+		while( k>=0) {
+			double pow=Math.pow(10 ,  k);
+			answer =(int)(N*pow +answer);
+			k=k-1;
+		}
+		System.out.println("Answer:" +answer); 
 
-		double answer =N+j;
-		System.out.println("Answer:" +answer);
-		
 		/*
 		 * Follow the instructions in Junior Problem 2.pdf.
 		 * Use the following data to test your program and record your answers
